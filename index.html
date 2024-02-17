@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Suite landing page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="container header">
+      <img src="./assets/logo.svg" alt="" />
+      <a href="#" class="button button--secondary">Request Beta Access</a>
+    </header>
+    <main>
+      <div class="container container--main">
+        <section class="hero">
+          <div class="hero__body">
+            <h1 class="hero__title">
+              A <b>super <span class="hero__highlight">solution</span></b> for
+              your <b>business</b>.
+            </h1>
+            <p class="hero__text">
+              Our marketing and sales automations help you scale your outreach
+              to get more leads for your company.
+            </p>
+            <a href="#" class="button button--primary"> Request Beta Access</a>
+          </div>
+
+          <picture>
+            <source
+              srcset="
+                ./assets/image-hero-landscape.png    1x,
+                ./assets/image-hero-landscape@2x.png 2x
+              "
+              media="(max-width: 604px)"
+              width="343"
+              height="240"
+              type="image/png"
+            />
+            <source
+              srcset="
+                ./assets/image-hero-portrait.png    1x,
+                ./assets/image-hero-portrait@2x.png 2x
+              "
+              media="(min-width: 605px)"
+              width="350"
+              height="600"
+              type="image/png"
+            />
+
+            <source
+              srcset="
+                ./assets/image-hero-landscape.webp    1x,
+                ./assets/image-hero-landscape@2x.webp 2x
+              "
+              media="(max-width: 604px)"
+              width="343"
+              height="240"
+              type="image/webp"
+            />
+            <source
+              srcset="
+                ./assets/image-hero-portrait.webp    1x,
+                ./assets/image-hero-portrait@2x.webp 2x
+              "
+              media="(min-width: 605px)"
+              width="350"
+              height="600"
+              type="image/webp"
+            />
+
+            <img
+              class="hero__image"
+              src="./assets/image-hero-portrait.png"
+              width="350"
+              height="600"
+              alt=""
+            />
+          </picture>
+
+          <ul class="hero__list">
+            <li class="hero__item">
+              <span class="hero__number">2K+</span> Companies
+            </li>
+            <li class="hero__item">
+              <span class="hero__number">8</span> Languages
+            </li>
+            <li class="hero__item">
+              <span class="hero__number">1.2M</span> Leads
+            </li>
+          </ul>
+        </section>
+        <section class="testimonial">
+          <div class="testimonial__image">
+            <picture>
+              <source
+                srcset="
+                  ./assets/image-jeremy-small.png    1x,
+                  ./assets/image-jeremy-small@2x.png 2x
+                "
+                media="(max-width: 604px)"
+                type="image/png"
+              />
+
+              <source
+                srcset="
+                  ./assets/image-jeremy-large.png    1x,
+                  ./assets/image-jeremy-large@2x.png 2x
+                "
+                media="(min-width: 605px)"
+                type="image/png"
+              />
+
+              <source
+                srcset="
+                  ./assets/image-jeremy-small.webp    1x,
+                  ./assets/image-jeremy-small@2x.webp 2x
+                "
+                media="(max-width: 604px)"
+                type="image/webp"
+              />
+
+              <source
+                srcset="
+                  ./assets/image-jeremy-large.webp    1x,
+                  ./assets/image-jeremy-large@2x.webp 2x
+                "
+                media="(min-width: 605px)"
+                type="image/webp"
+              />
+
+              <img src="./assets/image-jeremy-large.png" alt="" />
+            </picture>
+          </div>
+          <div class="testimonial__body">
+            <img src="./assets/pattern-curved-line-2.svg" alt="" />
+
+            <div>
+              <h2 class="testimonial__title">It just <b>works</b>.</h2>
+              <blockquote class="testimonial__quote">
+                “I really like how it is an all-in-one solution that handle many
+                of the tasks that you would normally need separate tools to do
+                the same job. This thing is a miracle worker.”
+                <cite class="testimonial__cite">
+                  Jeremy Robinson
+                  <span class="testimonial__location">CMO, Fylo</span></cite
+                >
+              </blockquote>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <img src="./assets/logo.svg" alt="" />
+        <p class="footer__text">Copyright - Suite</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              ><img src="./assets/icon-facebook.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              ><img src="./assets/icon-twitter.svg" alt=""
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#"
+              ><img src="./assets/icon-instagram.svg" alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
