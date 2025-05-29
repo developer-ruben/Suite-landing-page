@@ -203,12 +203,14 @@ p {
 .hero__text {
   margin-bottom: 5.2rem;
   max-width: 350px;
+  color: hsl(var(--clr-grey));
 }
 
 .hero__list {
   display: flex;
   flex-direction: column;
   gap: 6.3rem;
+  min-width: 190px;
   list-style-type: none;
 }
 
@@ -303,7 +305,6 @@ p {
   z-index: 1;
   max-width: 350px;
   font-size: var(--text-quote-size);
-  line-height: var(--text-quote-height);
 }
 
 .quote__title {
@@ -316,6 +317,7 @@ p {
 
 .quote__text {
   margin-bottom: 4rem;
+  line-height: var(--text-quote-height);
 }
 
 .quote__cite {
