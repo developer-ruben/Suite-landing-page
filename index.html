@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Suite landing page</title>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#"
+          ><img
+            class="header__logo"
+            src="./assets/images/logo.svg"
+            width="79"
+            height="26"
+            alt="Suite Logo"
+        /></a>
+        <a href="#" class="button button--secondary">Request Beta Access</a>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <picture class="hero__image">
+            <!-- WebP format for small screens -->
+            <source
+              type="image/webp"
+              srcset="
+                ./assets/images/image-hero-landscape.webp    1x,
+                ./assets/images/image-hero-landscape@2x.webp 2x
+              "
+              media="(max-width: 523px)"
+            />
+
+            <!-- PNG format for small screens -->
+            <source
+              type="image/png"
+              srcset="
+                ./assets/images/image-hero-landscape.png    1x,
+                ./assets/images/image-hero-landscape@2x.png 2x
+              "
+              media="(max-width: 523px)"
+            />
+
+            <!-- WebP format for larger screens -->
+            <source
+              type="image/webp"
+              srcset="
+                ./assets/images/image-hero-portrait.webp    1x,
+                ./assets/images/image-hero-portrait@2x.webp 2x
+              "
+              media="(min-width: 524px)"
+            />
+
+            <!-- PNG format for larger screens -->
+            <source
+              type="image/png"
+              srcset="
+                ./assets/images/image-hero-portrait.png    1x,
+                ./assets/images/image-hero-portrait@2x.png 2x
+              "
+              media="(min-width: 524px)"
+            />
+
+            <!-- Fallback image -->
+            <img
+              src="./assets/images/image-hero-portrait-small.png"
+              srcset="./assets/images/image-hero-portrait-small@2x.png 2x"
+              width="350"
+              height="600"
+              alt="Hero portrait"
+            />
+          </picture>
+
+          <div class="hero__left">
+            <h1 class="hero__title">
+              A <strong>super <span>solution</span></strong> for your
+              <strong>business</strong>.
+            </h1>
+            <p class="hero__text">
+              Our marketing and sales automations help you scale your outreach
+              to get more leads for your company.
+            </p>
+            <a href="#" class="button button--primary">Request Beta Access</a>
+          </div>
+          <div class="hero__right">
+            <ul class="hero__list">
+              <li class="hero__item">
+                2K+ <span class="hero__type">Companies</span>
+              </li>
+              <li class="hero__item">
+                8 <span class="hero__type">Languages</span>
+              </li>
+              <li class="hero__item">
+                1.2M <span class="hero__type">Leads</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="quote-section">
+        <div class="container">
+          <div class="quote-section__left">
+            <picture class="quote-section__image">
+              <!-- WebP format for small screens -->
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/image-jeremy-small.webp    1x,
+                  ./assets/images/image-jeremy-small@2x.webp 2x
+                "
+                media="(max-width: 768px)"
+              />
+
+              <!-- PNG format for small screens -->
+              <source
+                type="image/png"
+                srcset="
+                  ./assets/images/image-jeremy-small.png    1x,
+                  ./assets/images/image-jeremy-small@2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+
+              <!-- WebP format for larger screens -->
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/images/image-jeremy-large.webp    1x,
+                  ./assets/images/image-jeremy-large@2x.webp 2x
+                "
+                media="(min-width: 769px)"
+              />
+
+              <!-- PNG format for larger screens -->
+              <source
+                type="image/png"
+                srcset="
+                  ./assets/images/image-jeremy-large.png    1x,
+                  ./assets/images/image-jeremy-large@2x.png 2x
+                "
+                media="(min-width: 769px)"
+              />
+
+              <!-- Fallback image -->
+              <img
+                src="./assets/images/image-jeremy-large.png"
+                srcset="./assets/images/image-jeremy-large@2x.png 2x"
+                width="361"
+                height="590"
+                alt="Quote section Jeremy image"
+              />
+            </picture>
+          </div>
+          <div class="quote">
+            <h2 class="quote__title">It just <strong>works</strong>.</h2>
+            <blockquote class="quote__body">
+              <p class="quote__text">
+                “I really like how it is an all-in-one solution that handle many
+                of the tasks that you would normally need separate tools to do
+                the same job. This thing is a miracle worker.”
+              </p>
+              <cite class="quote__cite">
+                Jeremy Robinson
+                <span class="quote__location"> CMO, Fylo</span>
+              </cite>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <a href="#"
+          ><img
+            src="./assets/images/logo.svg"
+            width="79"
+            height="26"
+            alt="Suite Logo"
+        /></a>
+        <p class="footer__text">Copyright - Suite</p>
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/images/icon-facebook.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/images/icon-twitter.svg"
+                width="20"
+                height="17"
+                alt=""
+            /></a>
+          </li>
+          <li class="footer__item">
+            <a href="#"
+              ><img
+                class="footer__icon"
+                src="./assets/images/icon-instagram.svg"
+                width="20"
+                height="20"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a
+          class="attribution__link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          >Frontend Mentor</a
+        >. Coded by
+        <a
+          class="attribution__link"
+          href="https://rubendeman.nl"
+          target="_blank"
+          >Ruben de Man</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>
